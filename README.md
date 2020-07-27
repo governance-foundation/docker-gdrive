@@ -5,8 +5,8 @@
 [![github issues](https://img.shields.io/github/issues/governance-foundation/docker-gdrive)](https://github.com/governance-foundation/docker-gdrive)
 [![github last commit](https://img.shields.io/github/last-commit/governance-foundation/docker-gdrive)](https://github.com/governance-foundation/docker-gdrive)
 [![github repo size](https://img.shields.io/github/repo-size/governance-foundation/docker-gdrive)](https://github.com/governance-foundation/docker-gdrive)
-[![docker stars](https://img.shields.io/docker/stars/gvfn/docker-gdrive)](https://hub.docker.com/r/gvfn/docker-gdrive)
-[![docker pulls](https://img.shields.io/docker/pulls/gvfn/docker-gdrive)](https://hub.docker.com/r/gvfn/docker-gdrive)
+[![docker stars](https://img.shields.io/docker/stars/gvfn/gdrive)](https://hub.docker.com/r/gvfn/gdrive)
+[![docker pulls](https://img.shields.io/docker/pulls/gvfn/gdrive)](https://hub.docker.com/r/gvfn/gdrive)
 
 This is docker image [Gdrive](https://github.com/governance-foundation/gdrive) that allows you to interact with google drive api v3.
 
