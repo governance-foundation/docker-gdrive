@@ -12,7 +12,7 @@ LABEL   maintainer="devops <devops@governance.foundation>" \
         version="1.0.0" \
         imagename="gdrive" \
         test.command="gdrive version" \
-        test.command.verify="2.1.2"
+        test.command.verify="2.1.3"
 
 COPY --from=build-env /go/src/github.com/governance-foundation/gdrive/gdrive /usr/local/bin/gdrive
 ENTRYPOINT ["/usr/local/bin/gdrive"]
