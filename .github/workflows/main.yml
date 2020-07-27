@@ -32,8 +32,8 @@ jobs:
           docker build --pull -t $IMAGE:$IMAGE_TAG .
           docker images
           echo "TEST $IMAGE:$IMAGE_TAG"
-          echo "docker run --rm -v `pwd`:/gdrive --env GOOGLE_SERVICE_ACCOUNT="$(echo $GOOGLE_SERVICE_ACCOUNT)" $IMAGE:$IMAGE_TAG --config /gdrive --service-account-evar GOOGLE_SERVICE_ACCOUNT list"
-          docker run --rm -v `pwd`:/gdrive --env GOOGLE_SERVICE_ACCOUNT="$(echo $GOOGLE_SERVICE_ACCOUNT)" "$IMAGE:$IMAGE_TAG" --config /gdrive --service-account-evar GOOGLE_SERVICE_ACCOUNT list
+          echo "docker run --rm --env GOOGLE_SERVICE_ACCOUNT="$(echo ${GOOGLE_SERVICE_ACCOUNT})" $IMAGE:$IMAGE_TAG --config /gdrive --service-account-evar GOOGLE_SERVICE_ACCOUNT list"
+          docker run --rm --env GOOGLE_SERVICE_ACCOUNT="$(echo ${GOOGLE_SERVICE_ACCOUNT})" "$IMAGE:$IMAGE_TAG" --config /gdrive --service-account-evar GOOGLE_SERVICE_ACCOUNT list
       - name: login to docker registry
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ${DOCKER_REGISTRY} -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
       - name: push image version
